@@ -1,0 +1,140 @@
+/* CSS INI UNTUK MENGATUR TAMPILAN DI HTML */
+
+
+/* untuk header */
+header {
+  background-color: #343A40;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  padding-left: 20px;
+}
+
+#judul-header {
+  color: white;
+  padding: 20px;
+}
+
+
+.grid-container {
+  display: grid;
+}
+
+/* Media Query untuk tampilan responsive  */
+/* Untuk Leptop */
+@media only screen and (min-width: 992px) {
+  nav {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #content-section {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #article-section {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+/* Untuk Tablet */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  nav {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #content-section {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  #article-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+}
+
+/* Untuk Hp */
+@media only screen and (max-width: 600px) {
+  nav {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+
+  #content-section {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+
+  #article-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+}
+
+
+
+/* untuk nav atau navigasi */
+nav,
+a {
+  color: white;
+}
+
+#list-menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #343A40;
+  padding-right: 100px;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* untuk content */
+#content-section {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
+#content-section2 {
+  padding-left: 20px;
+  padding-Right: 20px;
+  border: 1;
+  border-style: solid;
+  border-color: #343A40;
+
+}
+
+/* untuk article */
+#article-section {
+  margin-bottom: 70px;
+  background-color: #343A40;
+  margin-top: 16px;
+  padding: 20px;
+  color: white
+}
+
+/* Untuk Footer */
+footer {
+  background-color: #F8F9FA;
+  color: #0F80FB;
+  padding: 20px;
+  /* footer flex */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+}
