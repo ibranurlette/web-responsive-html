@@ -3,11 +3,22 @@
 
 /* untuk header */
 header {
-  background-color: #343A40;
+  background-color: #1E90FF;
   align-items: center;
+}
+
+#header-title {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+}
+
+#head-nav {
+  margin-right: 20px;
 }
 
 img {
@@ -17,8 +28,8 @@ img {
 }
 
 #judul-header {
-  color: white;
-  padding: 20px;
+  color: black;
+  padding: 10px;
 }
 
 
@@ -28,10 +39,14 @@ img {
 
 /* Media Query untuk tampilan responsive  */
 /* Untuk Leptop */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
+  header {
+    display: flex;
+  }
+
   nav {
-    grid-column: 1;
-    grid-row: 1;
+    position: absolute;
+    right: 50px;
   }
 
   #content-section {
@@ -46,10 +61,15 @@ img {
 }
 
 /* Untuk Tablet */
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  header {
+    display: flex;
+  }
+
+
   nav {
-    grid-column: 1;
-    grid-row: 1;
+    position: absolute;
+    right: 50px;
   }
 
   #content-section {
@@ -59,15 +79,23 @@ img {
 
   #article-section {
     grid-column: 1 / span 3;
-    grid-row: 3;
+    grid-row: 2;
   }
 }
 
 /* Untuk Hp */
 @media only screen and (max-width: 600px) {
-  nav {
+
+  #header-title {
     grid-column: 1 / span 3;
     grid-row: 1;
+  }
+
+  nav {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    justify-content: center;
+    padding-bottom: 10px;
   }
 
   #content-section {
@@ -87,18 +115,6 @@ img {
 nav,
 a {
   color: white;
-}
-
-#list-menu {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #343A40;
-  padding-right: 100px;
-
-}
-
-ul {
-  list-style-type: none;
 }
 
 /* untuk content */
@@ -128,7 +144,7 @@ ul {
 
 /* Untuk Footer */
 footer {
-  background-color: #F8F9FA;
+  background-color: black;
   color: #0F80FB;
   padding: 20px;
   /* footer flex */
